@@ -1,0 +1,24 @@
+web:
+  build: .
+  command: php -S 0.0.0.0:8000 -t /code
+  ports:
+    - "8000:8000"
+  links:
+    - db
+  volumes:
+    - .:/code
+db:
+  #image: tutum/mysql
+  image: orchardup/mysql
+  volumes_from:
+    - dbdata
+  environment:
+    MYSQL_DATABASE: wordpress
+  #  MYSQL_USER: admin
+    MYSQL_PASS: password
+dbdata:
+  image: tutum/ubuntu:trusty
+  ports:
+    - "22"
+  volumes:
+    - "/var/lib/mysql"

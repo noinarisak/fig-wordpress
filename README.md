@@ -32,8 +32,8 @@ TODO: Write license
 
 ## TODO List
 
-[] Move the wordpress source out side of the Dockerfile.
-[] Add or expose the wp-content folder to store the custom files.
-[] Add the docker-backup container tools?
-[] Consider a adding a HAProxy container for MySql Clustering.
-[] Create git submodule for the wordpress source.
+- [] Move the wordpress source out side of the Dockerfile.
+- [] Add or expose the wp-content folder to store the custom files.
+- [] Add the docker-backup container tools?
+- [] Consider a adding a HAProxy container for MySql Clustering.
+- [] Create git submodule for the wordpress source.

@@ -31,6 +31,7 @@ TODO: Write credits
 TODO: Write license
 
 ## TODO List
+
 [] Move the wordpress source out side of the Dockerfile.
 [] Add or expose the wp-content folder to store the custom files.
 [] Add the docker-backup container tools?
